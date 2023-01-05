@@ -2,8 +2,8 @@
 # Lab-Bio-Desen-Sist-Din-micos-NUMPEX-BIO
 # Para calculo de correlação de Pearson e Spearman para dados de expressão gênica provenientes do Linkedomics por gene. 
 
-#versão 1.0
-
+#versão 4.0
+#Data: Dezembro 2021
 
 install.packages("ggpubr")
 install.packages("ggplot2")
