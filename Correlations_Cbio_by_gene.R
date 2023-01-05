@@ -224,6 +224,11 @@ ggscatter(graph_PRRX1_ZEB2, x = "PRRX1", y = "ZEB2",
           xlab = "PRRX1", ylab = "ZEB2")
 
 
+#*******FIM DO PROGRAMA**************
+
+
+
+#SEGUE ABAIXO OUTRA FORMA DE REALIZAR O CALCULO DE CORRELAÇÃO
 
 #*********************SEGUNDA FORMA********************************
 
@@ -311,3 +316,7 @@ ggscatter(data2_PRRX1_ZEB2, x = "PRRX1", y = "ZEB2",
           add = "reg.line", conf.int = TRUE,
           cor.coef = TRUE, cor.method = "spearman",title= " Subtipo HER2 - PRRX1 X ZEB2: Correlação Sperman",
           xlab = "PRRX1", ylab = "ZEB2")
+
+
+
+#*******FIM DO PROGRAMA**************
