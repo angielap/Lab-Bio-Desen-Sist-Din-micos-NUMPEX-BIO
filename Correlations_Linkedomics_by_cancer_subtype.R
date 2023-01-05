@@ -1,18 +1,18 @@
-library("tidyverse")
+# Lab-Bio-Desen-Sist-Din-micos-NUMPEX-BIO
+# Para calculo de correlação de Pearson e Spearman para dados de expressão gênica provenientes do Linkedomics por subtipo do câncer. 
+
+#versão 2.0
+#Data: Dezembro 2021
+
+
 library("ggplot2")
 library("ggpubr")
-library("plotly")
-library("reshape2")
-library("pheatmap")
-require(ggplot2)
 require(colorspace)
 library(grid)
 library(corrplot)
 library("ggcorrplot")
-library(ComplexHeatmap)
 
 
-#Rodar para cada subtipo
 
 #*********************PARA OS DADOS DO LINKEDOMICS********************************
 
@@ -22,8 +22,8 @@ data_PRRX1_TNC <- read.delim(file.choose("~Documentos/TCC/Main data/Linkedomics"
 
 
 
+#* RODAR ESTE TRECHO PARA CADA SUBTIPO*************************************************
 #**********Graficos dos dados*****************
-#*PARA CADA SUBTIPO*************************************************
 
 #*** TWIST1 X PRRX1
 
@@ -72,26 +72,6 @@ ggscatter(data_PRRX1_TNC, x = "PRRX1", y = "TNC",
 
 
 
-
-#FIM DO PROGRAMA
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #*** PRRX1 X TWIST1
 
 cor(data2_PRRX1_TWIST1$PRRX1,data2_PRRX1_TWIST1$TWIST1 )
@@ -136,3 +116,6 @@ ggscatter(data2_PRRX1_ZEB2, x = "PRRX1", y = "ZEB2",
           add = "reg.line", conf.int = TRUE,
           cor.coef = TRUE, cor.method = "spearman",title= " Subtipo HER2 - PRRX1 X ZEB2: Correlação Sperman",
           xlab = "PRRX1", ylab = "ZEB2")
+
+
+#*******FIM DO PROGRAMA**************
