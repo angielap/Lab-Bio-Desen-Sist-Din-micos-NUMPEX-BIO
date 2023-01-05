@@ -1,4 +1,10 @@
 
+# Lab-Bio-Desen-Sist-Din-micos-NUMPEX-BIO
+# Para calculo de correla√ß√£o de Pearson e Spearman para dados de express√£o g√™nica provenientes do Linkedomics por gene. 
+
+#vers√£o 1.0
+
+
 install.packages("ggpubr")
 install.packages("ggplot2")
 
@@ -28,12 +34,12 @@ summary(reg_alldata_TWIST1_PRRX1)
 
 ggscatter(alldata, x = "TWIST1", y = "PRRX1",
           add = "reg.line", conf.int = TRUE,
-          cor.coef = TRUE, cor.method = "pearson", title = "CorrelaÁ„o TWIST1 X PRRX1: Pearson",
+          cor.coef = TRUE, cor.method = "pearson", title = "Correla√ß√£o TWIST1 X PRRX1: Pearson",
           xlab = "TWIST1", ylab = "PRRX1")
 
 ggscatter(alldata, x = "TWIST1", y = "PRRX1",
           add = "reg.line", conf.int = TRUE,
-          cor.coef = TRUE, cor.method = "spearman", title = "CorrelaÁ„o TWIST1 X PRRX1: Spearman",
+          cor.coef = TRUE, cor.method = "spearman", title = "Correla√ß√£o TWIST1 X PRRX1: Spearman",
           xlab = "TWIST1", ylab = "PRRX1")
 
 
@@ -43,12 +49,12 @@ summary(reg_alldata_PRRX1_TNC)
 
 ggscatter(alldata, x = "PRRX1", y = "TNC",
           add = "reg.line", conf.int = TRUE,
-          cor.coef = TRUE, cor.method = "pearson", title = "CorrelaÁ„o PRRX1 X TNC: Pearson",
+          cor.coef = TRUE, cor.method = "pearson", title = "Correla√ß√£o PRRX1 X TNC: Pearson",
           xlab = "PRRX1", ylab = "TNC")
 
 ggscatter(alldata, x = "PRRX1", y = "TNC",
           add = "reg.line", conf.int = TRUE,
-          cor.coef = TRUE, cor.method = "spearman", title = "CorrelaÁ„o PRRX1 X TNC: Spearman",
+          cor.coef = TRUE, cor.method = "spearman", title = "Correla√ß√£o PRRX1 X TNC: Spearman",
           xlab = "PRRX1", ylab = "TNC")
 
 
@@ -58,17 +64,17 @@ summary(reg_alldata_TWIST1_TNC)
 
 ggscatter(alldata, x = "TWIST1", y = "TNC",
           add = "reg.line", conf.int = TRUE,
-          cor.coef = TRUE, cor.method = "pearson",  title = "CorrelaÁ„o TWIST1 X TNC: Pearson",
+          cor.coef = TRUE, cor.method = "pearson",  title = "Correla√ß√£o TWIST1 X TNC: Pearson",
           xlab = "TWIST1", ylab = "TNC")
 
 
 ggscatter(alldata, x = "TWIST1", y = "TNC",
           add = "reg.line", conf.int = TRUE,
-          cor.coef = TRUE, cor.method = "spearman",  title = "CorrelaÁ„o TWIST1 X TNC: Spearman",
+          cor.coef = TRUE, cor.method = "spearman",  title = "Correla√ß√£o TWIST1 X TNC: Spearman",
           xlab = "TWIST1", ylab = "TNC")
 
 
-#**********grafico de dispers√£o******************
+#**********grafico de dispers√É¬£o******************
 ggplot(alldata,aes(x=TWIST1, y=PRRX1))+
   geom_point(col="blue")+
   labs(title='mRNA Expression')+
