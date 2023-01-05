@@ -1,15 +1,16 @@
-library("tidyverse")
+
+# Lab-Bio-Desen-Sist-Din-micos-NUMPEX-BIO
+# Para calculo de correlação de Pearson e Spearman para dados de expressão gênica provenientes do Portal CBIO por gene. 
+
+#versão 2.0
+#Data: Dezembro 2021
+
+
 library("ggplot2")
 library("ggpubr")
-library("plotly")
-library("reshape2")
-library("pheatmap")
-require(ggplot2)
-require(colorspace)
 library(grid)
 library(corrplot)
 library("ggcorrplot")
-library(ComplexHeatmap)
 
 
 #dados usados com o Cbio
